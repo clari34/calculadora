@@ -1,4 +1,4 @@
-# Calculadora API (GQSO IFAL)
+# Calculadora API 
 - TODO [clari34]:
 
-Realizar as funcionalidades do projeto.
+Realizar todas as funcionalidades do projeto. 

@@ -7,15 +7,17 @@ import java.util.Scanner;
 
 public class Soma {
 
-    @Path("/soma/{ope}")
+    @Path("/soma/{a}/{b}")
     @GET
-    public String rotaSoma(@PathParam String ope, String a, String b){
+    public String rotaSoma(@PathParam String a,@PathParam String b){
         try{
-        double soma = Double.parseDouble(a)+Double.parseDouble(b);
-        soma = Double.parseDouble(ope);
+        double var1 = Double.parseDouble(a);
+        double var2 = Double.parseDouble(b);
+        double soma = var1 + var2;
         return String.format("%.2f", soma);
         } catch(NumberFormatException nfe){
-            throw new BadRequestException(String.format("Números invalidos:\"%s\"", ope));
+            throw new BadRequestException(String.format("Números invalidos:\"%s %s\"", a, b));
+
         }
     }
 }

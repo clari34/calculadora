@@ -7,6 +7,6 @@ public class Controller {
 
   @GET
   public String sayHi() {
-    return "Welcome to Jooby!";
+    return "Bem-vindo a Calculadora de Ana Clara!";
   }
 }

@@ -2,7 +2,6 @@ package app;
 
 import io.jooby.annotations.*;
 import io.jooby.exception.*;
-import java.util.Scanner;
 
 
 public class Soma {
@@ -17,7 +16,6 @@ public class Soma {
         return String.format("%.2f", soma);
         } catch(NumberFormatException nfe){
             throw new BadRequestException(String.format("Números invalidos:\"%s %s\"", a, b));
-
         }
     }
 }

@@ -1,0 +1,7 @@
+*.zip
+lib/
+bin/
+run/
+target/
+tmp/
+
